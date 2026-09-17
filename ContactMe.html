@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Contact Me </title>
+    <meta charset="UTF-8">
+</head>
+
+
+<body>
+    <header>
+        <h1> Watch the video and fill out the form. Thanks! </h1>
+    </header>
+    <main>
+        <section> <!-- Video Section -->
+            <h2> The USCA Experience </h2>
+            <iframe width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/7ph78wNgiT8?si=svE9fIdzME-1Y_kt" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section> <!-- Form Section -->
+            <h2> Feedback Form: </h2>
+            <form action="null" name="feedback">
+                <!-- User Information -->
+                <p>
+                    <label for="fname"> First Name: </label><br>
+                    <input type="text" id="fname" name="fname" placeholder="anonymous" required>
+                </p>
+                <p>
+                    <label for="lname"> Last Name: </label><br>
+                    <input type="text" id="lname" name="lname" placeholder="anonymous" required>
+                </p>
+                <p>
+                    <label for="dob"> Date of Birth: </label><br>
+                    <input type="date" name="dob" id="dob">
+                </p>
+                <p>
+                    <label for="mail"> Email: </label><br>
+                    <input type="email" id="mail" name="mail" placeholder="name@domain.com">
+                </p>
+                <!-- Checkbox for Occupation -->
+                <p>
+                    <label for="occupation"> Occupation: </label><br>
+                    <input type="checkbox" id="occupation1" name="occupation1" value="student">
+                    <label for="occupation1"> Student </label><br>
+                    <input type="checkbox" id="occupation2" name="occupation2" value="fulltime">
+                    <label for="occupation2"> Full Time Employee </label><br>
+                    <input type="checkbox" id="occupation3" name="occupation3" value="parttime">
+                    <label for="occupation3"> Part Time Employee </label>
+                </p>
+                <!-- Recommend Radio Buttons -->
+                <p>
+                    <label for="recommend"> Would you recommend this site? </label><br>
+                    <input type="radio" id="yes" name="recommend">
+                    <label for="yes"> Yes </label>
+                    <input type="radio" id="no" name="recommend">
+                    <label for="no"> No </label>
+                </p>
+                <!-- Favorite Website Selection -->
+                <p>
+                    <label for="favwebsite"> What is your favorite website? </label><br>
+                    <select name="favwebsite" id="favwebsite">
+                        <option value="Google"> Google </option>
+                        <option value="Facebook"> Facebook </option>
+                        <option value="Twitter"> Twitter </option>
+                        <option value="YouTube"> YouTube </option>
+                        <option value="Other"> Other </option>
+                    </select>
+                </p>
+                <!-- Range Element -->
+                <p>
+                    <label for="rating"> Please rate this site (1 - 10) </label><br>
+                    <input type="range" id="rating" name="rating" min="1" max="10">
+                </p>
+                <p>
+                    <label for="comment"> Comments: </label><br>
+                    <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+                </p>
+                <p>
+                    <input type="reset" name="reset">
+                    <input type="submit" name="submit" id="submit">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section id="contactsection">
+            <p><b> Contact Information </b></p>
+            <address>
+                Email: <a href="mailto:gallmas@usca.edu"> gallmas@usca.edu</a>
+            </address>
+        </section>
+
+        <!-- Copyright Section -->
+        <p>
+            <strong> &copy; 2026 Sharonnie G. All rights reserved. </strong>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
