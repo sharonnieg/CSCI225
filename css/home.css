@@ -1,0 +1,162 @@
+/*
+File to style index.html
+1. Global Variables
+2. Layout
+*/
+
+/* Global Variables */
+:root {
+    --color-bg-body: #F08080;
+    --color-frame: #F5276C;
+    --color-font: hsl(0, 0%, 5%);
+    --color-link: hsl(140, 59%, 70%);
+    --color-header: #FFDAB9;
+    --img-background: url(../img/checkeredGreen.jpg);
+}
+
+/* Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Font, Color */
+p {
+    font-family: "Roboto Condensed", serif;
+}
+
+ul {
+    color: var(--color-font);
+    font-weight: lighter;
+}
+
+/* Text */
+* {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgb(238, 116, 167);
+}
+
+/* Paragraph */
+p {
+    line-height: 2em;
+    text-align: center;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--color-link);
+    margin: 0 -.25rem;
+    transition: var(--color-link) .3s ease-in-out .3s;
+}
+
+a:hover {
+    box-shadow: 10px 5px 5px var(--color-link);
+    color: white;
+}
+
+/* List */
+ul.navbar {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    display: flex;
+    gap: 5px;
+}
+
+ul li:before {
+    content: '♥';
+}
+
+/* Background Image */
+body {
+    background-image: var(--img-background);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: var(--color-font);
+    color: var(--color-header);
+    border-radius: 20px 20px 0 0;
+}
+
+/* Border */
+.navbar {
+    background-color: var(--color-font);
+    border-radius: 10px;
+    border: white;
+}
+
+/* Selector Practice */
+p::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-bg-body);
+    opacity: 0.5;
+}
+
+#portfoliosection li:first-child {
+    box-shadow: 0px 4px 10px var(--color-link);
+    border-radius: 8px;
+}
+
+/* Table */
+th, td {
+    border: 3px solid var(--color-frame);
+    padding: 8px;
+    vertical-align: middle;
+    empty-cells: hide;
+}
+
+/* Transform, Transition, and Animation */
+.footer {
+    animation-name: moving;
+    display: inline-block;
+    animation: moving 6s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes moving {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(700px);}
+}
+
+/* Extras */
+h2 {
+    color: var(--color-header);
+}
+
+.navbar a{
+    color: var(--color-header);
+}
+
+figure {
+    text-align: center;
+}
+
+footer address {
+    text-align: center;
+}
+

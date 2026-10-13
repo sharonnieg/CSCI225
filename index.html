@@ -6,14 +6,15 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
     <div class="container">
         <!-- Header w/ Navigation Elements-->
         <header class="row">
-            <nav class="col navbar bg-dark text-green">
-                <h2 style=" color:green;"> Navigation </h2>
+            <nav class="navbar">
+                <h2> Navigation </h2>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="https://www.usca.edu" target="_blank"> USCA Website
                         </a></li>
@@ -29,15 +30,16 @@
         </header>
 
         <!-- Main Content Area -->
-        <main class="row">
+        <main class="maincontent">
             <!-- Introduction -->
             <section class="col" id="introductionsection">
-                <h2 style="color:green;"> Introduction </h2>
+                <h2> Introduction </h2>
                 <p>
                     Hello! I am Sharonnie, a Computer Science student at USCA.
                     This is my course homepage for CSCI 225. Here, I will upload
                     assignments for said course. I enjoy reading, exercising,
-                    listening to music, and self care.
+                    listening to music, and self care. I am currently enrolled in 
+                    five courses. So far, Web Development has been one of my favorites. 
                 </p>
                 <figure>
                     <img src="img/processed-9B74C558-EE22-4AFE-B2C4-09939C72A16F.jpeg" alt="beachimg" height="300"
@@ -46,8 +48,8 @@
             </section>
 
             <!-- Portfolio -->
-            <section class="col" id="portfoliosection">
-                <h2 style="color:green;"> Portfolio </h2>
+            <section class="item" id="portfoliosection">
+                <h2> Portfolio </h2>
                 <ul>
                     <li> Software Engineering: Bus Route Planning System
                         <ul>
@@ -75,9 +77,9 @@
             </section>
 
             <!-- Schedule -->
-            <section class="col" id="schedulesection">
-                <h2 style="color:green;"> Schedule </h2>
-                <table border="1">
+            <section class="item" id="schedulesection">
+                <h2> Schedule </h2>
+                <table>
                     <tr>
                         <th> Day/Period </th>
                         <th> I <br> 9:00 - 11: 00 AM </th>
@@ -125,8 +127,8 @@
         </main>
 
         <!-- Sidebar -->
-        <aside id="assignmentsection">
-            <h2 style="color:green;"> Assignments </h2>
+        <aside id="assignmentsection" class="item">
+            <h2> Assignments </h2>
             <ol>
                 <li><a href="ContactMe.html">ContactMe.html</a> </li>
                 <li><a href="doc/Assignment1SG.docx"> Assignment 1 </a></li>
@@ -137,7 +139,7 @@
 
         <!-- Footer -->
         <footer>
-            <section id="contactsection">
+            <section id="contactsection" class="footer">
                 <p><b> Contact Information </b></p>
                 <address>
                     Email: <a href="mailto:gallmas@usca.edu"> gallmas@usca.edu</a>
