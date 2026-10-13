@@ -4,147 +4,155 @@
 <head>
     <title> CSCI225 Homepage of Sharonnie Gallman </title>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Header w/ Navigation Elements-->
-    <header>
-        <h2 style="color:green;"> Navigation </h2>
-        <nav>
-            <ul>
-                <li><a href="https://www.usca.edu" target="_blank"> USCA Website </a></li>
-                <li><a href="https://github.com/sharonnieg" target="_blank"> My GitHub Page </a></li>
-                <li><a href="#introductionsection"> Introduction </a></li>
-                <li><a href="#portfoliosection"> Portfolio </a></li>
-                <li><a href="#schedulesection"> Schedule </a></li>
-                <li><a href="#assignmentsection"> Assignments </a></li>
-                <li><a href="#contactsection"> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Header w/ Navigation Elements-->
+        <header class="row">
+            <nav class="col navbar bg-dark text-green">
+                <h2 style=" color:green;"> Navigation </h2>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="https://www.usca.edu" target="_blank"> USCA Website
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/sharonnieg" target="_blank"> My
+                            GitHub Page </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#introductionsection"> Introduction </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfoliosection"> Portfolio </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedulesection"> Schedule </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#assignmentsection"> Assignments </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactsection"> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Main Content Area -->
-    <main>
-        <!-- Introduction -->
-        <section id="introductionsection">
-            <h2 style="color:green;"> Introduction </h2>
+        <!-- Main Content Area -->
+        <main class="row">
+            <!-- Introduction -->
+            <section class="col" id="introductionsection">
+                <h2 style="color:green;"> Introduction </h2>
+                <p>
+                    Hello! I am Sharonnie, a Computer Science student at USCA.
+                    This is my course homepage for CSCI 225. Here, I will upload
+                    assignments for said course. I enjoy reading, exercising,
+                    listening to music, and self care.
+                </p>
+                <figure>
+                    <img src="img/processed-9B74C558-EE22-4AFE-B2C4-09939C72A16F.jpeg" alt="beachimg" height="300"
+                        width="200">
+                </figure>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="col" id="portfoliosection">
+                <h2 style="color:green;"> Portfolio </h2>
+                <ul>
+                    <li> Software Engineering: Bus Route Planning System
+                        <ul>
+                            <li> Assisted in developing software that takes user input
+                                for starting and ending destination and returns a
+                                planned route with ETA and distance traveled. </li>
+                        </ul>
+                    </li>
+                    <li> Data Structures and Algorithms
+                        <ul>
+                            <li> Created programs that demonstrated an understanding
+                                of object-oriented programming, data structures, and algorithms.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> Data Analysis With Python
+                        <ul>
+                            <li> Used Python libraries (Numpy, Pandas, etc) to manipulate
+                                and clean data for analysis. Analyzed gathered Spotify data
+                                to spot trends and track which genres were most popular.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Schedule -->
+            <section class="col" id="schedulesection">
+                <h2 style="color:green;"> Schedule </h2>
+                <table border="1">
+                    <tr>
+                        <th> Day/Period </th>
+                        <th> I <br> 9:00 - 11: 00 AM </th>
+                        <th> II <br> 11:00 - 1:00 PM </th>
+                        <th> III <br> 1:00 - 3:00 PM </th>
+                        <th> IV <br> 3:00 - 5:00 PM </th>
+                    </tr>
+                    <tr>
+                        <td class="highlight"> <b> Monday </b> </td>
+                        <td> Web Dev </td>
+                        <td> Capstone </td>
+                        <td> Study </td>
+                        <td> Study </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"> <b> Tuesday </b> </td>
+                        <td> Operating Systems </td>
+                        <td> Mobile App Dev </td>
+                        <td> Study </td>
+                        <td> Study </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"> <b> Wednesday </b> </td>
+                        <td> Web Dev </td>
+                        <td> Capstone </td>
+                        <td> Study </td>
+                        <td> Study </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"> <b> Thursday </b> </td>
+                        <td> Operating Systems </td>
+                        <td> Mobile App Dev </td>
+                        <td> Study </td>
+                        <td> Study </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"> <b> Friday </b> </td>
+                        <td> Study </td>
+                        <td> Study </td>
+                        <td> Study </td>
+                        <td> Study </td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside id="assignmentsection">
+            <h2 style="color:green;"> Assignments </h2>
+            <ol>
+                <li><a href="ContactMe.html">ContactMe.html</a> </li>
+                <li><a href="doc/Assignment1SG.docx"> Assignment 1 </a></li>
+                <li><a href="doc/Assignment2SG.pdf"> Assignment 2 </a> </li>
+                <li> Assignment 3 In Progress </li>
+            </ol>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <section id="contactsection">
+                <p><b> Contact Information </b></p>
+                <address>
+                    Email: <a href="mailto:gallmas@usca.edu"> gallmas@usca.edu</a>
+                </address>
+            </section>
+
+            <!-- Copyright Section -->
             <p>
-                Hello! I am Sharonnie, a Computer Science student at USCA.
-                This is my course homepage for CSCI 225. Here, I will upload
-                assignments for said course. I enjoy reading, exercising,
-                listening to music, and self care.
+                &copy; 2026 Sharonnie G. All rights reserved.
             </p>
-            <figure>
-                <img src="img/processed-9B74C558-EE22-4AFE-B2C4-09939C72A16F.jpeg" alt="beachimg" height="300"
-                    width="200">
-            </figure>
-        </section>
-
-        <!-- Portfolio -->
-        <section id="portfoliosection">
-            <h2 style="color:green;"> Portfolio </h2>
-            <ul>
-                <li> Software Engineering: Bus Route Planning System
-                    <ul>
-                        <li> Assisted in developing software that takes user input
-                            for starting and ending destination and returns a
-                            planned route with ETA and distance traveled. </li>
-                    </ul>
-                </li>
-                <li> Data Structures and Algorithms
-                    <ul>
-                        <li> Created programs that demonstrated an understanding
-                            of object-oriented programming, data structures, and algorithms.
-                        </li>
-                    </ul>
-                </li>
-                <li> Data Analysis With Python
-                    <ul>
-                        <li> Used Python libraries (Numpy, Pandas, etc) to manipulate
-                            and clean data for analysis. Analyzed gathered Spotify data
-                            to spot trends and track which genres were most popular.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Schedule -->
-        <section id="schedulesection">
-            <h2 style="color:green;"> Schedule </h2>
-            <table border="1">
-                <tr>
-                    <th> Day/Period </th>
-                    <th> I <br> 9:00 - 11: 00 AM </th>
-                    <th> II <br> 11:00 - 1:00 PM </th>
-                    <th> III <br> 1:00 - 3:00 PM </th>
-                    <th> IV <br> 3:00 - 5:00 PM </th>
-                </tr>
-                <tr>
-                    <td class="highlight"> <b> Monday </b> </td>
-                    <td> Web Dev </td>
-                    <td> Capstone </td>
-                    <td> Study </td>
-                    <td> Study </td>
-                </tr>
-                <tr>
-                    <td class="highlight"> <b> Tuesday </b> </td>
-                    <td> Operating Systems </td>
-                    <td> Mobile App Dev </td>
-                    <td> Study </td>
-                    <td> Study </td>
-                </tr>
-                <tr>
-                    <td class="highlight"> <b> Wednesday </b> </td>
-                    <td> Web Dev </td>
-                    <td> Capstone </td>
-                    <td> Study </td>
-                    <td> Study </td>
-                </tr>
-                <tr>
-                    <td class="highlight"> <b> Thursday </b> </td>
-                    <td> Operating Systems </td>
-                    <td> Mobile App Dev </td>
-                    <td> Study </td>
-                    <td> Study </td>
-                </tr>
-                <tr>
-                    <td class="highlight"> <b> Friday </b> </td>
-                    <td> Study </td>
-                    <td> Study </td>
-                    <td> Study </td>
-                    <td> Study </td>
-                </tr>
-            </table>
-        </section>
-    </main>
-
-    <!-- Sidebar -->
-    <aside id="assignmentsection">
-        <h2 style="color:green;"> Assignments </h2>
-        <ol>
-            <li><a href="ContactMe.html">ContactMe.html</a>  </li>
-            <li><a href="doc/Assignment1SG.docx"> Assignment 1 </a></li>
-            <li><a href="doc/Assignment2SG.pdf"> Assignment 2 </a> </li>
-            <li> Assignment 3 In Progress </li>
-        </ol>
-    </aside>
-
-    <!-- Footer -->
-    <footer>
-        <section id="contactsection">
-            <p><b> Contact Information </b></p>
-            <address>
-                Email: <a href="mailto:gallmas@usca.edu"> gallmas@usca.edu</a>
-            </address>
-        </section>
-
-        <!-- Copyright Section -->
-        <p>
-            &copy; 2026 Sharonnie G. All rights reserved.
-        </p>
-    </footer>
-
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
