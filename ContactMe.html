@@ -12,9 +12,9 @@
 <body>
     <div class="container">
         <header class="row">
-            <nav class="col navbar fixed-top bg-dark text-green">
-                <h2 style=" color:green;"> Navigation </h2>
-                <ul class="nav">
+            <nav class="col navbar fixed-top bg-success">
+                <h2 style=" color:#FFDAB9"> Navigation </h2>
+                <ul class="nav fw-light">
                     <li class="nav-item"><a class="nav-link" href="https://www.usca.edu" target="_blank"> USCA Website
                         </a></li>
                     <li class="nav-item"><a class="nav-link" href="https://github.com/sharonnieg" target="_blank"> My
@@ -32,10 +32,12 @@
         <main>
             <section> <!-- Video Section -->
                 <h2> The USCA Experience </h2>
-                <iframe width="560" height="315"
-                    src="https://www.youtube-nocookie.com/embed/7ph78wNgiT8?si=svE9fIdzME-1Y_kt" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube-nocookie.com/embed/7ph78wNgiT8?si=svE9fIdzME-1Y_kt" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </section>
             <section> <!-- Form Section -->
                 <h2> Feedback Form: </h2>
@@ -49,22 +51,23 @@
                     </div>
                     </p>
                     <p>
-                        <div class="form-floating mb-3">
+                    <div class="form-floating mb-3">
                         <label for="lname"> Last Name: </label><br>
-                        <input type="text" id="lname" name="lname" placeholder="anonymous" required>
-                        </div>
+                        <input type="text" id="lname" name="lname" placeholder="anonymous" class="form-control">
+                    </div>
                     </p>
                     <p>
-                        <div class="form-floating mb-3">
+                    <div class="form-floating mb-3">
                         <label for="dob"> Date of Birth: </label><br>
-                        <input type="date" name="dob" id="dob">
-                        </div>
+                        <input type="date" name="dob" id="dob" class="form-control">
+                    </div>
                     </p>
                     <p>
                     <div>
                         <label for="mail"> Email: </label><br>
-                        <input type="email" id="mail" name="mail" placeholder="name@domain.com">
-                        <small id="emailHelp" class="form-text text-muted">Your emain will not be shared with anyone else.</small>
+                        <input type="email" id="mail" name="mail" placeholder="name@domain.com" class="form-control">
+                        <small id="emailHelp" class="form-text text-muted">Your emain will not be shared with anyone
+                            else.</small>
                     </div>
 
                     </p>
