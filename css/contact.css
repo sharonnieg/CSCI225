@@ -1,0 +1,5 @@
+/* File to Style ContactMe.html */
+.form-floating > .form-control:focus::placeholder {
+    color: gray;
+    opacity: 1;
+}
